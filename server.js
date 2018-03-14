@@ -20,6 +20,7 @@ function serverHandler(req, res) {
             httpVersion: req.httpVersion,
             method: req.method,
             url: req.url,
+            env: process.env,
             headers: req.headers,
         };
         res.setHeader('Content-Type', 'application/json');
